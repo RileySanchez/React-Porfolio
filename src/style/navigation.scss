@@ -7,11 +7,11 @@
     a {
       margin-left: 15px;
       cursor: pointer;
-      color: $teal;
+      color: #432f75;
       transition: 0.5s ease-in-out;
 
       &:hover {
-        color: $dark-teal;
+        color: #211050;
       }
     }
   }
@@ -29,15 +29,15 @@
     font-size: 0.9rem;
 
     a {
-      color: $grey;
+      color: #432f75;
       text-decoration: none;
       &:hover {
-        color: black;
+        color: #211050;
       }
     }
 
     &:hover {
-      border-bottom: 1px solid black;
+      border-bottom: 1px solid #211050;
     }
 
     .nav-link-active {
