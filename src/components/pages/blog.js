@@ -74,7 +74,7 @@ class Blog extends Component {
         }
       )
       .then((response) => {
-        console.log("gettting", response.data);
+        console.log("getting", response.data);
         this.setState({
           blogItems: this.state.blogItems.concat(response.data.portfolio_blogs),
           totalCount: response.data.meta.total_records,
@@ -108,6 +108,7 @@ class Blog extends Component {
           handleModalClose={this.handleModalClose}
           modalIsOpen={this.state.blogModalIsOpen}
         />
+
         {this.props.loggedInStatus === "LOGGED_IN" ? (
           <div className="new-blog-link">
             <a onClick={this.handleNewBlogClick}>

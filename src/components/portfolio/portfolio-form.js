@@ -244,7 +244,7 @@ export default class PortfolioForm extends Component {
         <div className="image-uploaders">
           {this.state.thumb_image_url && this.state.editMode ? (
             <div className="portfolio-manager-image-wrapper">
-              <img src={this.state.thumb_image_url} />
+              <img src={this.state.thumb_image_url} alt="" />
 
               <div className="image-removal-link">
                 <a onClick={() => this.deleteImage("thumb_image")}>
@@ -265,7 +265,7 @@ export default class PortfolioForm extends Component {
 
           {this.state.banner_image_url && this.state.editMode ? (
             <div className="portfolio-manager-image-wrapper">
-              <img src={this.state.banner_image_url} />
+              <img src={this.state.banner_image_url} alt="" />
 
               <div className="image-removal-link">
                 <a onClick={() => this.deleteImage("banner_image")}>
@@ -286,7 +286,7 @@ export default class PortfolioForm extends Component {
 
           {this.state.logo_url && this.state.editMode ? (
             <div className="portfolio-manager-image-wrapper">
-              <img src={this.state.logo_url} />
+              <img src={this.state.logo_url} alt="" />
 
               <div className="image-removal-link">
                 <a onClick={() => this.deleteImage("logo")}>Remove file</a>
