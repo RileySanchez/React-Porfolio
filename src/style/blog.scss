@@ -4,6 +4,17 @@
   align-items: center;
   position: relative;
 
+  .admin-blog-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+      margin-left: 15px;
+      cursor: pointer;
+    }
+  }
+
   .new-blog-link {
     position: fixed;
     right: 0;
@@ -12,13 +23,13 @@
     a {
       font-size: 3em;
       cursor: pointer;
-      color: #211050;
+      color: $teal;
       margin-right: 15px;
       margin-bottom: 15px;
       transition: 0.5s ease-in-out;
 
       &:hover {
-        color: #aba2c4;
+        color: $dark-teal;
       }
     }
   }
